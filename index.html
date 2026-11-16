@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CellStay サポート</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; line-height: 1.8;
+  }
+  h1 { border-bottom: 3px solid #1E885E; padding-bottom: .4rem; }
+  h2 { margin-top: 2.5rem; color: #1E885E; }
+  footer { margin-top: 4rem; font-size: .85rem; opacity: .7; }
+  a { color: #1E885E; }
+  dt { font-weight: bold; margin-top: 1rem; }
+</style>
+</head>
+<body>
+<h1>CellStay サポート</h1>
+<p>CellStay（セルステイ）は、CSV ファイルを開いたときの形のまま直せる Mac アプリです。Excel で作った Shift-JIS の CSV も、文字コード・改行・区切り文字を自動で見分けて開き、直したセルだけを書き換えて保存します。直していない部分は、元のファイルと1バイトも変わりません。</p>
+
+<h2>使い方</h2>
+<ol>
+  <li>「ファイル」メニューの「開く…」（⌘O）で CSV を選ぶか、Finder で CSV を CellStay のアイコンにドラッグして開きます。</li>
+  <li>直したいセルを選んで、そのまま文字を打つか return を押すと入力が始まります。return で確定して下のセルへ、tab で右のセルへ進みます。esc で入力を取り消します。</li>
+  <li>表の上の欄でも、選んだセルの中身を直せます。</li>
+  <li>「ファイル」メニューの「保存」（⌘S）で保存します。開いたときと同じ文字コード・改行で書き戻します。</li>
+</ol>
+
+<h2>よくある質問</h2>
+<dl>
+  <dt>Q. 郵便番号や社員番号の先頭の 0 が消えませんか？</dt>
+  <dd>A. 消えません。CellStay はすべてのセルを文字として扱います。数字・日付・数式らしい文字も、書いてあるとおりに表示し、そのまま保存します。</dd>
+  <dt>Q. 1か所直しただけなのに、ファイル全体の書き方が変わってしまいませんか？</dt>
+  <dd>A. 変わりません。直していないセルや行は、引用符の付け方や改行も含めて元のまま書き戻します。何も直さずに保存すれば、元のファイルと同じ内容になります。</dd>
+  <dt>Q. 開いたら文字化けしていました</dt>
+  <dd>A. 文字コードの判別が外れた可能性があります。「ファイル」メニューの「文字コードを指定して開き直す」から選び直してください。列がうまく分かれないときは「区切り文字を指定して開き直す」を使います。</dd>
+  <dt>Q. 別の文字コードで保存したい</dt>
+  <dd>A. 画面の下で、保存するときの文字コードと改行を選べます。選んだ文字コードで表せない文字があるときは、どのセルのどの文字かを示して保存を止めます。</dd>
+  <dt>Q. 対応している形式は？</dt>
+  <dd>A. 文字コードは UTF-8（BOM 付き／なし）、Shift-JIS、EUC-JP。改行は CRLF・LF・CR。区切りはカンマ・タブ・セミコロンです。UTF-16（Excel の「Unicode テキスト」）には対応していません。</dd>
+  <dt>Q. 行や列を足したり消したりできますか？</dt>
+  <dd>A. 「表」メニューから行・列の挿入と削除ができます。検索と置換は「編集」メニューの「検索」（⌘F・⌥⌘F）にあります。</dd>
+  <dt>Q. Excel からコピーした表を貼れますか？</dt>
+  <dd>A. 貼れます。Excel のセルをコピーして、CellStay で貼り付けたい位置のセルを選んでペースト（⌘V）してください。</dd>
+  <dt>Q. 自動で保存されますか？</dt>
+  <dd>A. されません。保存は ⌘S を押したときだけです。保存せずに閉じようとすると確認が出ます。</dd>
+</dl>
+
+<h2>お問い合わせ</h2>
+<p>不具合のご報告やご要望は <a href="mailto:emc.hs07@gmail.com">emc.hs07@gmail.com</a> までお寄せください。</p>
+<p><a href="privacy.html">プライバシーポリシー</a></p>
+
+<footer>© 2026 Hideki Sato — CellStay</footer>
+</body>
+</html>
